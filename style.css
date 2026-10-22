@@ -1,0 +1,311 @@
+
+/* CONFIGURACION GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: #f5edff;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(ellipse at top, #34204f 0%, #171126 45%, #090711 100%);
+}
+/* Cursor personalizado para jugar */
+#canvasJuego {
+    cursor: crosshair;
+}
+
+#botonMusica {
+  background-color: #4b176e;
+  color: white;
+  border: 2px solid #a855f7;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#botonMusica:hover {
+  background-color: #7028a0;
+}
+
+/* ENCABEZADO */
+header h1 {
+    color: #ff9d2e;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: bold;
+    text-shadow: 0 0 12px #ff6a00;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #d7b7ff;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.imagen-titulo {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    margin-top: 10px;
+}
+
+/* PANEL DE INSTRUCCIONES */
+.panel-juego {
+    background: rgba(39, 26, 58, 0.94);
+    border: 1px solid #7546a8;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(145, 75, 220, 0.2);
+}
+
+.panel-juego h2 {
+    color: #ffc16c;
+    font-size: 1.4rem;
+}
+
+.panel-juego p {
+    color: #e3d9f0;
+    line-height: 1.5;
+}
+
+/* CONTADOR */
+.contador {
+    background: #130d20;
+    border: 2px solid #ff9d2e;
+    border-radius: 12px;
+    padding: 15px;
+    color: #ffca83;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#contador {
+    display: block;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+
+/* ESCENARIO DEL JUEGO */
+.escenario {
+    width: 100%;
+    overflow: hidden;
+    border: 3px solid #8c58bd;
+    border-radius: 15px;
+    background: #080c16;
+    box-shadow:
+        0 0 15px rgba(161, 87, 255, 0.5),
+        0 0 35px rgba(99, 40, 170, 0.2);
+}
+
+#canvasJuego {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: crosshair;
+}
+
+/* BOTONES */
+#botonMusica,
+#botonReiniciar {
+    margin: 5px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#botonMusica {
+    color: #24122f;
+    border: none;
+    background: #ffad42;
+}
+
+#botonReiniciar {
+    color: #ffffff;
+    background: #59357d;
+    border: 1px solid #a980d3;
+}
+
+#botonMusica:hover,
+#botonReiniciar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(255, 173, 66, 0.5);
+}
+
+/* CREDITOS */
+footer {
+    margin-top: 20px;
+    color: #b9a9cb;
+    border-top: 1px solid #39284b;
+    font-size: 0.9rem;
+}
+
+/* ===== HALLOWEEN PRO ===== */
+
+:root {
+    --halloween-purple: #251238;
+    --halloween-dark: #100b19;
+    --halloween-orange: #ffad32;
+    --halloween-violet: #a855f7;
+    --halloween-white: #f8efff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--halloween-white);
+    background:
+        radial-gradient(ellipse at 50% 20%, #392052 0%, transparent 55%),
+        linear-gradient(145deg, #100b19, #21102f 55%, #100b19);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+header h1 {
+    color: var(--halloween-orange);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    text-shadow: 0 0 12px #ff8c4266;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #e8d9fa;
+    font-size: 1.2rem;
+}
+
+main h2 {
+    color: var(--halloween-orange);
+    font-weight: 800;
+}
+
+main section {
+    margin-bottom: 28px;
+}
+
+#contador {
+    color: var(--halloween-orange);
+    font-weight: 900;
+    text-shadow: 0 0 20px #ff9f1c66;
+}
+
+#canvasJuego {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid var(--halloween-orange);
+    border-radius: 18px;
+    box-shadow:
+        0 0 10px #ff9f1c55,
+        0 0 35px #8b3dff33;
+    cursor: crosshair;
+}
+
+#botonMusica,
+#botonReiniciar {
+    border: 1px solid #ffffff40;
+    border-radius: 30px;
+    padding: 14px 28px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        filter .2s ease;
+}
+
+#botonMusica {
+    color: #24122f;
+    background: linear-gradient(135deg, #ffd166, #ff942e);
+    box-shadow: 0 0 18px #ff9f1c33;
+}
+
+#botonReiniciar {
+    color: white;
+    background: linear-gradient(135deg, #8545b5, #542878);
+    box-shadow: 0 0 18px #a855f733;
+}
+
+#botonMusica:hover,
+#botonReiniciar:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+    box-shadow: 0 8px 24px #00000055;
+}
+
+#botonMusica:focus-visible,
+#botonReiniciar:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+footer {
+    margin-top: 35px;
+    border-top: 1px solid #ffffff25;
+    color: #c8b6db;
+    line-height: 1.8;
+}
+
+::selection {
+    color: #180d22;
+    background: var(--halloween-orange);
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-top: 24px !important;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #botonMusica,
+    #botonReiniciar {
+        width: 100%;
+        padding: 12px 16px;
+    }
+
+    #canvasJuego {
+        border-radius: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    #botonMusica,
+    #botonReiniciar {
+        transition: none;
+    }
+}
+
+/* ADAPTACION PARA CELULARES */
+@media (max-width: 576px) {
+    .imagen-titulo {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+
+    .panel-juego {
+        padding: 15px;
+    }
+
+    .contador {
+        margin-top: 5px;
+    }
+}
